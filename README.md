@@ -4,9 +4,9 @@ Some basic notes on Linting and Testing with node.js (WIP)
 
 ## Linting
 
-* [JSLint](jslint.com)
-* [JSHint](jshint.com)
-* [ESLint](eslint.org)
+* [JSLint](http://jslint.com)
+* [JSHint](http://jshint.com)
+* [ESLint](http://eslint.org)
 
 To install:
 
@@ -34,9 +34,9 @@ Details:
 
 ## Testing Frameworks
 
-* [Mocha](mochjs.org)
-* [Jasmine](jasmine.github.io)
-* [Jest](facebook.github.io/jest)
+* [Mocha](http://mochjs.org)
+* [Jasmine](http://jasmine.github.io)
+* [Jest](http://facebook.github.io/jest)
 
 To install:
 
@@ -61,9 +61,9 @@ npm test
 ## Assertion Libraries
 
 * Assert
-* [code](github.com/hapijs/code)
-* [Chai](chaijs.com)
-* [Should.js](shouldjs.github.io)
+* [code](http://github.com/hapijs/code)
+* [Chai](http://chaijs.com)
+* [Should.js](http://shouldjs.github.io)
 
 [`Assert` is node's native assertion library and does not need to be installed.]
 
@@ -75,9 +75,9 @@ npm install chai -D
 
 ## Dependency Manipulation Libraries
 
-* [Mocker](github.com/mfncooper/mockery)
-* [Proxyquire](github.com/thlorenz/proxyquire)
-* [Rewire](github.com/jhnns/rewire)
+* [Mocker](http://github.com/mfncooper/mockery)
+* [Proxyquire](http://github.com/thlorenz/proxyquire)
+* [Rewire](http://github.com/jhnns/rewire)
 
 To install:
 
