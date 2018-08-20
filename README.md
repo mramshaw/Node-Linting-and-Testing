@@ -34,7 +34,7 @@ Details:
 
 ## Testing Frameworks
 
-* [Mocha](http://mochjs.org)
+* [Mocha](http://mochajs.org)
 * [Jasmine](http://jasmine.github.io)
 * [Jest](http://facebook.github.io/jest)
 
@@ -60,9 +60,13 @@ npm test
 
 ## Assertion Libraries
 
+Depending upon your preferences for [TDD](https://www.agilealliance.org/glossary/tdd/)
+versus [BDD](https://www.agilealliance.org/glossary/bdd/), any of the following libraries
+may be a good choice.
+
 * Assert
-* [code](http://github.com/hapijs/code)
-* [Chai](http://chaijs.com)
+* [code](http://github.com/hapijs/code) is a BDD assertion library
+* [Chai](http://chaijs.com) is a BDD / TDD assertion library
 * [Should.js](http://shouldjs.github.io)
 
 [`Assert` is node's native assertion library and does not need to be installed.]
