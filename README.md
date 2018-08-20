@@ -79,7 +79,7 @@ npm install chai -D
 
 ## Dependency Manipulation Libraries
 
-* [Mocker](http://github.com/mfncooper/mockery)
+* [Mockery](http://github.com/mfncooper/mockery)
 * [Proxyquire](http://github.com/thlorenz/proxyquire)
 * [Rewire](http://github.com/jhnns/rewire)
 
