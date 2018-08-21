@@ -2,6 +2,14 @@
 
 Some basic notes on Linting and Testing with node.js (WIP)
 
+Contents
+
+* [Linting](#linting)
+* [Testing Frameworks](#testing-frameworks)
+* [Assertion Libraries](#assertion-libraries)
+* [Dependency Manipulation Libraries](#dependency-manipulation-libraries)
+* [Code Coverage Libraries](#code-coverage-libraries)
+
 ## Linting
 
 * [JSLint](http://jslint.com)
@@ -25,7 +33,13 @@ Update `package.json` as follows:
 To run:
 
 ```bash
-npm run -s eslint
+npm run -s eslint .
+```
+
+To run and fix errors:
+
+```bash
+npm run -s eslint -- --fix .
 ```
 
 Details:
@@ -87,4 +101,30 @@ To install:
 
 ```bash
 npm install proxyquire -D
+```
+
+## Code Ceoverage Libraries
+
+* Blanket (no longer maintained)
+* JSCoverage (no longer maintained)
+* [Istanbul](http://istanbul.js.org)
+
+To install:
+
+```bash
+npm install nyc -D
+```
+
+Update `package.json` as follows:
+
+```
+  "scripts": {
+    "coverage": "nyc --reporter=text --reporter=html mocha"
+  },
+```
+
+To run:
+
+```bash
+npm run -s coverage
 ```
