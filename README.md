@@ -5,9 +5,11 @@ Some basic notes on Linting and Testing with node.js (WIP)
 Contents
 
 * [Linting](#linting)
-* [Testing Frameworks](#testing-frameworks)
-* [Assertion Libraries](#assertion-libraries)
-* [Dependency Manipulation Libraries](#dependency-manipulation-libraries)
+* [Testing](#testing)
+    * [Testing Frameworks](#testing-frameworks)
+    * [Testing Frameworks](#testing-frameworks)
+    * [Assertion Libraries](#assertion-libraries)
+    * [Dependency Manipulation Libraries](#dependency-manipulation-libraries)
 * [Code Coverage Libraries](#code-coverage-libraries)
 
 ## Linting
@@ -46,7 +48,15 @@ Details:
 
     https://eslint.org/docs/user-guide/command-line-interface
 
-## Testing Frameworks
+## Testing
+
+![Test Doubles](/images/Test_Doubles.png)
+
+> xUnit Test Patterns: Refactoring Test Code
+> By Gerard Meszaros
+> Page 527
+
+#### Testing Frameworks
 
 * [Mocha](http://mochajs.org)
 * [Jasmine](http://jasmine.github.io)
@@ -72,7 +82,7 @@ To run:
 npm test
 ```
 
-## Assertion Libraries
+#### Assertion Libraries
 
 Depending upon your preferences for [TDD](https://www.agilealliance.org/glossary/tdd/)
 versus [BDD](https://www.agilealliance.org/glossary/bdd/), any of the following libraries
@@ -91,7 +101,7 @@ To install:
 npm install chai -D
 ```
 
-## Dependency Manipulation Libraries
+#### Dependency Manipulation Libraries
 
 * [Mockery](http://github.com/mfncooper/mockery)
 * [Proxyquire](http://github.com/thlorenz/proxyquire)
