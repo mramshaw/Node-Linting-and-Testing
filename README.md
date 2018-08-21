@@ -103,7 +103,7 @@ To install:
 npm install proxyquire -D
 ```
 
-## Code Ceoverage Libraries
+## Code Coverage Libraries
 
 * Blanket (no longer maintained)
 * JSCoverage (no longer maintained)
