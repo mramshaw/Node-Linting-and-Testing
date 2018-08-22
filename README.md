@@ -53,8 +53,8 @@ Details:
 ![Test Doubles](/images/Test_Doubles.png)
 
 > xUnit Test Patterns: Refactoring Test Code
-> By Gerard Meszaros
-> Page 527
+> by Gerard Meszaros,
+> page 527
 
 #### Testing Frameworks
 
@@ -88,6 +88,13 @@ Depending upon your preferences for [TDD](https://www.agilealliance.org/glossary
 versus [BDD](https://www.agilealliance.org/glossary/bdd/), any of the following libraries
 may be a good choice.
 
+TDD is an older and more established software practice, also hacker-friendly.
+
+BDD is a related but more formal practice, which aims to align the tests with
+the functional specifications (which means that there need to be written
+functional specifications in place, perhaps more of a waterfall approach than
+an agile approach).
+
 * Assert
 * [code](http://github.com/hapijs/code) is a BDD assertion library
 * [Chai](http://chaijs.com) is a BDD / TDD assertion library
@@ -114,6 +121,10 @@ npm install proxyquire -D
 ```
 
 ## Code Coverage Libraries
+
+Opinions differ on whether or not 100% coverage is a realistic or achievable
+goal, however this is a very useful statistic for measuring software quality
+and how it changes over time.
 
 * Blanket (no longer maintained)
 * JSCoverage (no longer maintained)
