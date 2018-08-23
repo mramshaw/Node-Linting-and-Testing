@@ -121,6 +121,10 @@ To install:
 npm install proxyquire -D
 ```
 
+For more details:
+
+    https://github.com/thlorenz/proxyquire#usage
+
 #### Functional Testing Tools
 
 * [PhantomJS](http://phantomjs.org)
