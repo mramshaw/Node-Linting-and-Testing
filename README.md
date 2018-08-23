@@ -10,6 +10,7 @@ Contents
     * [Testing Frameworks](#testing-frameworks)
     * [Assertion Libraries](#assertion-libraries)
     * [Dependency Manipulation Libraries](#dependency-manipulation-libraries)
+    * [Functional Testing Tools](#functional-testing-tools)
 * [Code Coverage Libraries](#code-coverage-libraries)
 
 ## Linting
@@ -118,6 +119,22 @@ To install:
 
 ```bash
 npm install proxyquire -D
+```
+
+#### Functional Testing Tools
+
+* [PhantomJS](http://phantomjs.org)
+* [CasperJS](http://casperjs.org)
+* [Selenium WebDriver](http://seleniumhq.org)
+* [NightwatchJS](http://nightwatchjs.org)
+* [WebdriverIO](http://webdriver.io)
+* [SuperAgent](http://visionmedia.github.io/superagent)
+* [Chai HTTP](http://chaijs.com/plugins/chai-http)
+
+To install:
+
+```bash
+npm install chai-http -D
 ```
 
 ## Code Coverage Libraries
