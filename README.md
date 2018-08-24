@@ -11,6 +11,7 @@ Contents
     * [Assertion Libraries](#assertion-libraries)
     * [Dependency Manipulation Libraries](#dependency-manipulation-libraries)
     * [Functional Testing Tools](#functional-testing-tools)
+    * [HTML Parsing](#html-parsing)
 * [Code Coverage Libraries](#code-coverage-libraries)
 
 ## Linting
@@ -139,6 +140,26 @@ To install:
 
 ```bash
 npm install chai-http -D
+```
+
+#### HTML Parsing
+
+For functional testing, it is useful to be able to parse the HTML responses (rather
+than `grep` for certain hard-coded text strings).
+
+Either way, determining that the HTML response is correct makes for a very brittle
+and error-prone test.
+
+For parsing and validating HTML, the following library may be useful:
+
+    https://cheerio.js.org/
+
+[Cheerio is designed for ___server-side___ HTML Parsing.]
+
+To install:
+
+```bash
+npm install cheerio -D
 ```
 
 ## Code Coverage Libraries
