@@ -126,6 +126,22 @@ For more details:
 
     https://github.com/thlorenz/proxyquire#usage
 
+It is probably a good idea to also install Sinon:
+
+* [Sinon](https://sinonjs.org/)
+
+Sinon describes itself as "Standalone test spies, stubs and mocks for JavaScript".
+
+It works well with Proxyquire:
+
+    https://github.com/thlorenz/proxyquire/tree/master/examples/sinon
+
+To install:
+
+```bash
+npm install sinon -D
+```
+
 #### Functional Testing Tools
 
 * [PhantomJS](http://phantomjs.org)
@@ -144,17 +160,16 @@ npm install chai-http -D
 
 #### HTML Parsing
 
-For functional testing, it is useful to be able to parse the HTML responses (rather
-than `grep` for certain hard-coded text strings).
+For functional or performance testing, it is useful to be able to parse HTML responses
+(rather than `grep` for certain hard-coded text strings).
 
 Either way, determining that the HTML response is correct makes for a very brittle
 and error-prone test.
 
-For parsing and validating HTML, the following library may be useful:
+For parsing and validating HTML, Cheerio should be useful - bearing in mind that it
+was designed for ___server-side___ HTML Parsing.
 
-    https://cheerio.js.org/
-
-[Cheerio is designed for ___server-side___ HTML Parsing.]
+* [Cheerio](https://cheerio.js.org/)
 
 To install:
 
@@ -167,6 +182,27 @@ npm install cheerio -D
 Opinions differ on whether or not 100% coverage is a realistic or achievable
 goal, however this is a very useful statistic for measuring software quality
 and how it changes over time.
+
+[My opinion is that anything less than 70% code coverage is unacceptable.
+ I have talked with many colleagues, and standards may change depending
+ on the specific application or industry, with some sites requiring 80%
+ coverage -- or even 100% coverage -- so I am NOT saying that 70% coverage
+ is ideal, merely that 70% coverage is the bare minimum to start with,
+ even if it results in some time lost in writing tests and/or refactoring.
+ If your project is a few thousand lines of code or less, 100% coverage
+ is probably the correct goal to shoot for.]
+
+It's important to realize that 100% code coverage does NOT mean bug-free code!
+
+A downside of testing and code coverage is that it often introduces brittle
+and difficult-to-maintain tests, all of which increase the number of lines
+of code. This should never be used as an excuse ___not___ to write tests,
+but it is something to bear in mind. For instance, it is a good idea to
+wait until any APIs have been finalized before spending too much time
+writing tests - as any API changes will lead to multiple code changes.
+
+A balance must be maintained between writing tests and the burden of
+actually maintaining the test code.
 
 * Blanket (no longer maintained)
 * JSCoverage (no longer maintained)
