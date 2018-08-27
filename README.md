@@ -243,7 +243,7 @@ GitHub integration is usually relatively easy and painless, and often has a free
 
 * [CircleCI](http://circleci.com)
 * [Gitlab](http://gitlab.com)
-* [Travis CI](http://travis-ci.com)
+* [Travis CI](http://travis-ci.org)
 
 In my experience, Travis CI has been easy to use and features an easy integration with
 GitHub such that a code commit triggers an automated build as well as CI.
