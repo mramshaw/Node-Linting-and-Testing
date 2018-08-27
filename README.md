@@ -13,6 +13,7 @@ Contents
     * [Functional Testing Tools](#functional-testing-tools)
     * [HTML Parsing](#html-parsing)
 * [Code Coverage Libraries](#code-coverage-libraries)
+* [Continuous Integration](#continuous-integration)
 
 ## Linting
 
@@ -180,8 +181,8 @@ npm install cheerio -D
 ## Code Coverage Libraries
 
 Opinions differ on whether or not 100% coverage is a realistic or achievable
-goal, however this is a very useful statistic for measuring software quality
-and how it changes over time.
+goal, however code coverage is a very useful statistic for measuring software
+quality and how it changes over time.
 
 [My opinion is that anything less than 70% code coverage is unacceptable.
  I have talked with many colleagues, and standards may change depending
@@ -227,3 +228,22 @@ To run:
 ```bash
 npm run -s coverage
 ```
+
+## Continuous Integration
+
+This is really a ___best practice___ and should include linting and code coverage tests,
+as discussed above.
+
+* [BuildBot](http://buildbot.net)
+* [Jenkins](http://jenkins.io)
+* [Strider CD](http://strider-cd.github.io)
+
+For many uses, CIAAS (Continuous Integration As A Service) may be an attractive option.
+GitHub integration is usually relatively easy and painless, and often has a free tier.
+
+* [CircleCI](http://circleci.com)
+* [Gitlab](http://gitlab.com)
+* [Travis CI](http://travis-ci.com)
+
+In my experience, Travis CI has been easy to use and features an easy integration with
+GitHub such that a code commit triggers an automated build as well as CI.
