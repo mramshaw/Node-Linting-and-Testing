@@ -49,7 +49,7 @@ npm run -s eslint -- --fix .
 
 Details:
 
-    https://eslint.org/docs/user-guide/command-line-interface
+    http://eslint.org/docs/user-guide/command-line-interface
 
 ## Testing
 
@@ -61,9 +61,11 @@ Details:
 
 #### Testing Frameworks
 
+* [AVA](http://github.com/avajs/ava)
 * [Mocha](http://mochajs.org)
 * [Jasmine](http://jasmine.github.io)
 * [Jest](http://facebook.github.io/jest)
+* [Tape](http://github.com/substack/tape)
 
 To install:
 
@@ -87,8 +89,8 @@ npm test
 
 #### Assertion Libraries
 
-Depending upon your preferences for [TDD](https://www.agilealliance.org/glossary/tdd/)
-versus [BDD](https://www.agilealliance.org/glossary/bdd/), any of the following libraries
+Depending upon your preferences for [TDD](http://www.agilealliance.org/glossary/tdd/)
+versus [BDD](http://www.agilealliance.org/glossary/bdd/), any of the following libraries
 may be a good choice.
 
 TDD is an older and more established software practice, also hacker-friendly.
@@ -125,17 +127,17 @@ npm install proxyquire -D
 
 For more details:
 
-    https://github.com/thlorenz/proxyquire#usage
+    http://github.com/thlorenz/proxyquire#usage
 
 It is probably a good idea to also install Sinon:
 
-* [Sinon](https://sinonjs.org/)
+* [Sinon](http://sinonjs.org/)
 
 Sinon describes itself as "Standalone test spies, stubs and mocks for JavaScript".
 
 It works well with Proxyquire:
 
-    https://github.com/thlorenz/proxyquire/tree/master/examples/sinon
+    http://github.com/thlorenz/proxyquire/tree/master/examples/sinon
 
 To install:
 
@@ -170,7 +172,7 @@ and error-prone test.
 For parsing and validating HTML, Cheerio should be useful - bearing in mind that it
 was designed for ___server-side___ HTML Parsing.
 
-* [Cheerio](https://cheerio.js.org/)
+* [Cheerio](http://cheerio.js.org/)
 
 To install:
 
@@ -203,7 +205,9 @@ wait until any APIs have been finalized before spending too much time
 writing tests - as any API changes will lead to multiple code changes.
 
 A balance must be maintained between writing tests and the burden of
-actually maintaining the test code.
+actually maintaining the test code, all while bearing in mind that
+tests - while valuable - do not deliver added functionality to the
+end user.
 
 * Blanket (no longer maintained)
 * JSCoverage (no longer maintained)
