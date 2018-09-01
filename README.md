@@ -2,8 +2,12 @@
 
 Some basic notes on Linting and Testing with node.js (WIP)
 
+The notes will cover using the javascript package manager `npm`
+but all of this can probably be done just as easily with `yarn`.
+
 Contents
 
+* [Type Checking](#type-checking)
 * [Linting](#linting)
 * [Testing](#testing)
     * [Testing Frameworks](#testing-frameworks)
@@ -14,6 +18,36 @@ Contents
     * [HTML Parsing](#html-parsing)
 * [Code Coverage Libraries](#code-coverage-libraries)
 * [Continuous Integration](#continuous-integration)
+
+## Type Checking
+
+* [Flow](http://flow.org)
+
+To install:
+
+```bash
+npm install flow-bin -D
+```
+
+Update `package.json` as follows:
+
+```
+  "scripts": {
+    "flow": "flow"
+  },
+```
+
+To run:
+
+```bash
+npm run -s flow
+```
+
+[Note that individual files must be annotated in order to be scanned by `flow`.]
+
+Details:
+
+    http://flow.org/en/docs/
 
 ## Linting
 
@@ -92,6 +126,8 @@ npm test
 Depending upon your preferences for [TDD](http://www.agilealliance.org/glossary/tdd/)
 versus [BDD](http://www.agilealliance.org/glossary/bdd/), any of the following libraries
 may be a good choice.
+
+[Note that Ava, Jasmine and Jest include their own assertion libraries.]
 
 TDD is an older and more established software practice, also hacker-friendly.
 
