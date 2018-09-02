@@ -2,6 +2,13 @@
 
 Some basic notes on Linting and Testing with node.js (WIP)
 
+[Of course, most of these tools may also be used when developing with
+ plain javascript as well as javascript frameworks such as React.]
+
+All of the main browsers have extensions that can verify javascript.
+When testing client-side javascript components, these are probably
+the first place to start.
+
 The notes will cover using the javascript package manager `npm`
 but all of this can probably be done just as easily with `yarn`.
 
@@ -17,9 +24,15 @@ Contents
     * [Functional Testing Tools](#functional-testing-tools)
     * [HTML Parsing](#html-parsing)
 * [Code Coverage Libraries](#code-coverage-libraries)
+* [Dependency Checking](#dependency-checking)
+* [Vulnerability Scanning](#vulnerability-scanning)
 * [Continuous Integration](#continuous-integration)
 
 ## Type Checking
+
+Type checking adds an extra level of validation when developing in javascript.
+
+[This is the type of validation normally provided by a compiler.]
 
 * [Flow](http://flow.org)
 
@@ -268,6 +281,27 @@ To run:
 ```bash
 npm run -s coverage
 ```
+
+## Dependency Checking
+
+Any build effort should include a tool to scan dependencies for known vulnerabilities.
+
+* [OWASP Dependency-Check](http://www.owasp.org/index.php/OWASP_Dependency_Check)
+
+[Platforms other than __Java__ and __.NET__ are supported via the Command Line tool.]
+
+This tool ___may___ require that a Java Runtime Environment (JRE) be installed.
+
+For more details:
+
+    http://jeremylong.github.io/DependencyCheck/general/thereport
+
+## Vulnerability Scanning
+
+Any build effort should include tools to scan for vulnerabilities.
+
+* [Burp](http://portswigger.net/burp)
+* [Snyk](http://snyk.io)
 
 ## Continuous Integration
 
