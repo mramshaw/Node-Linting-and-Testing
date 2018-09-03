@@ -2,7 +2,7 @@
 
 Some basic notes on Linting and Testing with node.js (WIP)
 
-[Of course, most of these tools may also be used when developing with
+[Most of these tools may also be used when developing with
  plain javascript as well as javascript frameworks such as React.]
 
 All of the main browsers have extensions that can verify javascript.
@@ -56,7 +56,12 @@ To run:
 npm run -s flow
 ```
 
-[Note that individual files must be annotated in order to be scanned by `flow`.]
+Note that individual files must be annotated as follows in order to be scanned by `flow`:
+
+```javascript
+// @flow
+
+```
 
 Details:
 
@@ -303,6 +308,37 @@ Any build effort should include tools to scan for vulnerabilities.
 * [Burp](http://portswigger.net/burp)
 * [Snyk](http://snyk.io)
 
+Snyk offers reports, notifications and an attractive dashboard. It also offers a number
+of attractive integrations, such as GitHub and Travis/Jenkins.
+
+Snyk publishes a list of the vulnerabilities that it can scan for:
+
+    https://snyk.io/vuln
+
+Snyk uses dependency manifests in order to determine the dependencies to scan:
+
+    http://support.snyk.io/getting-started/languages-support
+
+This ___may___ be an issue to be aware of. For instance, note that for Golang repo
+testing, Snyk only supports a few of the possible manifest options offered by Golang's
+myriad dependency managers. And for Python, there will need to be a __requirements.txt__
+file. While very useful, it's worth bearing in mind that Snyk only scans projects
+under the control of a package manager - and uses the ___package manifest___ to do this.
+As the manifest may not actually reflect the ___installed___ packages, this needs
+to be taken into account (this should not be a concern in a __CI__ or build pipeline).
+
+For example, if the `requirements.txt` file contains `Flask>=0.12.2` then Snyk will
+scan with the ___latest___ Flask (flask@1.0.2 at the time of writing). This may not
+reflect the locally installed version of the particular dependency (Flask here).
+
+Snyk scans ___recursively___, which is a very nice feature indeed.
+
+Snyk also offers a CLI option, but I believe you will need a Snyk account to use it.
+
+For more details:
+
+    http://snyk.io/docs
+
 ## Continuous Integration
 
 This is really a ___best practice___ and should include linting and code coverage tests,
@@ -320,4 +356,4 @@ GitHub integration is usually relatively easy and painless, and often has a free
 * [Travis CI](http://travis-ci.org)
 
 In my experience, Travis CI has been easy to use and features an easy integration with
-GitHub such that a code commit triggers an automated build as well as CI.
+GitHub such that a code commit triggers an automated build as well as CI testing.
