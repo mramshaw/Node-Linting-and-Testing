@@ -328,10 +328,11 @@ As the manifest may not actually reflect the ___installed___ packages, this need
 to be taken into account (this should not be a concern in a __CI__ or build pipeline).
 
 For example, if the `requirements.txt` file contains `Flask>=0.12.2` then Snyk will
-scan with the ___latest___ Flask (flask@1.0.2 at the time of writing). This may not
+scan with the ___latest___ Flask (`flask@1.0.2` at the time of writing). This may not
 reflect the locally installed version of the particular dependency (Flask here).
 
-Snyk scans ___recursively___, which is a very nice feature indeed.
+Snyk scans ___recursively___, which is a very nice feature indeed. This means that
+that each package manifest will be scanned (and generate a report).
 
 Snyk also offers a CLI option, but I believe you will need a Snyk account to use it.
 
