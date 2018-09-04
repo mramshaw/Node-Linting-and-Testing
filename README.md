@@ -291,6 +291,9 @@ npm run -s coverage
 
 Any build effort should include a tool to scan dependencies for known vulnerabilities.
 
+The [Open Web Application Security Project (OWASP)](http://www.owasp.org/index.php/Main_Page)
+sponsors a number of security projects, among them a dependency checker:
+
 * [OWASP Dependency-Check](http://www.owasp.org/index.php/OWASP_Dependency_Check)
 
 [Platforms other than __Java__ and __.NET__ are supported via the Command Line tool.]
@@ -300,6 +303,12 @@ This tool ___may___ require that a Java Runtime Environment (JRE) be installed.
 For more details:
 
     http://jeremylong.github.io/DependencyCheck/general/thereport
+
+OWASP also sponsors (along with others) the [OWASP .NET Project](http://www.owasp.org/index.php/OWASP_.NET_Project)
+and the [OWASP  Node js Goat Project](http://www.owasp.org/index.php/OWASP_Node_js_Goat_Project).
+
+While there are no doubt many other places to search for security vulnerabilities,
+OWASP is probably as good a place as any to start.
 
 ## Vulnerability Scanning
 
