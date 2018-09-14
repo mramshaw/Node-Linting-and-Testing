@@ -18,7 +18,6 @@ Contents
 * [Linting](#linting)
 * [Testing](#testing)
     * [Testing Frameworks](#testing-frameworks)
-    * [Testing Frameworks](#testing-frameworks)
     * [Assertion Libraries](#assertion-libraries)
     * [Dependency Manipulation Libraries](#dependency-manipulation-libraries)
     * [Functional Testing Tools](#functional-testing-tools)
@@ -27,6 +26,7 @@ Contents
 * [Dependency Checking](#dependency-checking)
 * [Vulnerability Scanning](#vulnerability-scanning)
 * [Continuous Integration](#continuous-integration)
+* [To Do](#todo)
 
 ## Type Checking
 
@@ -367,3 +367,7 @@ GitHub integration is usually relatively easy and painless, and often has a free
 
 In my experience, Travis CI has been easy to use and features an easy integration with
 GitHub such that a code commit triggers an automated build as well as CI testing.
+
+## To Do
+
+- [ ] Investigate [Serenity](http://thucydides.info/#/) [BDD framework for validating use cases]
