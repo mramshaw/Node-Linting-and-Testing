@@ -154,6 +154,9 @@ the functional specifications (which means that there need to be written
 functional specifications in place, perhaps more of a waterfall approach than
 an agile approach).
 
+There are a number of BDD frameworks for languages such as Ruby (minitest) and
+Java (JGiven) but the focus here is on frameworks for javascript.
+
 * Assert
 * [code](http://github.com/hapijs/code) is a BDD assertion library
 * [Chai](http://chaijs.com) is a BDD / TDD assertion library
