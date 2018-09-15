@@ -1,6 +1,7 @@
 # Node-Linting-and-Testing
 
-Some basic notes on Linting and Testing with node.js (WIP)
+Some notes on Linting and Testing with node.js as well as some
+general thoughts on BDD & TDD frameworks.
 
 [Most of these tools may also be used when developing with
  plain javascript as well as javascript frameworks such as React.]
@@ -154,8 +155,17 @@ the functional specifications (which means that there need to be written
 functional specifications in place, perhaps more of a waterfall approach than
 an agile approach).
 
-There are a number of BDD frameworks for languages such as Ruby (minitest) and
-Java (JGiven) but the focus here is on frameworks for javascript.
+[My take on this is that BDD and TDD are really complementary disciplines. Both take
+___best practices___ from __Design by Contract__ and __Use Cases__ (pre-conditions
+and post-conditions) and focus on putting Descartes before the horse (by writing
+the acceptance tests before the code - and only writing code once tests fail). This
+is in contrast to what I call 'Happy Path coding' which does not take exceptions or
+errors into consideration. My easy mnemonic for remembering which is which is 'T'
+for technical (such as testing for exceptions, errors or edge cases) testing and 'B'
+for business (business-related user acceptance criteria) testing.]
+
+There are a number of BDD frameworks for languages such as Ruby (Cucumber, minitest)
+and Java (JGiven) but the focus here is on frameworks for javascript.
 
 * Assert
 * [code](http://github.com/hapijs/code) is a BDD assertion library
@@ -373,5 +383,6 @@ GitHub such that a code commit triggers an automated build as well as CI testing
 
 ## To Do
 
+- [x] Investigate [Cucumber](http://cucumber.io/) [BDD framework for Ruby] and __Gherkin__
 - [ ] Investigate [Serenity](http://thucydides.info/#/) [BDD framework for validating use cases]
 - [ ] Investigate [SpecFlow](http://specflow.org/) [BDD framework that describes itself as "Cucumber for .NET"]
