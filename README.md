@@ -328,7 +328,11 @@ OWASP is probably as good a place as any to start.
 Any build effort should include tools to scan for vulnerabilities.
 
 * [Burp](http://portswigger.net/burp)
+* [Require.js](http://github.com/RetireJS/retire.js/) [can be integrated as a Burp plugin]
 * [Snyk](http://snyk.io)
+
+[Require.js](http://retirejs.github.io/retire.js/) publishes a list of the vulnerabilities
+that it can scan for, which is definitely worth a look.
 
 Snyk offers reports, notifications and an attractive dashboard. It also offers a number
 of attractive integrations, such as GitHub and Travis/Jenkins.
@@ -383,6 +387,6 @@ GitHub such that a code commit triggers an automated build as well as CI testing
 
 ## To Do
 
-- [x] Investigate [Cucumber](http://cucumber.io/) [BDD framework for Ruby] and __Gherkin__
+- [x] Investigate [Cucumber](http://cucumber.io/) [BDD framework for Ruby] and __Gherkin__ (English-like DSL for expressing acceptance criteria)
 - [ ] Investigate [Serenity](http://thucydides.info/#/) [BDD framework for validating use cases]
 - [ ] Investigate [SpecFlow](http://specflow.org/) [BDD framework that describes itself as "Cucumber for .NET"]
