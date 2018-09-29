@@ -1,5 +1,7 @@
 # Node-Linting-and-Testing
 
+![node.js](/images/nodejs.png)
+
 Some notes on Linting and Testing with node.js as well as some
 general thoughts on BDD & TDD frameworks.
 
