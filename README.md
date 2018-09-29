@@ -25,6 +25,8 @@ Contents
     * [HTML Parsing](#html-parsing)
 * [Code Coverage Libraries](#code-coverage-libraries)
 * [Dependency Checking](#dependency-checking)
+    * [npm audit](#npm-audit)
+    * [OWASP](#owasp)
 * [Vulnerability Scanning](#vulnerability-scanning)
 * [Continuous Integration](#continuous-integration)
 * [To Do](#to-do)
@@ -304,6 +306,34 @@ npm run -s coverage
 
 Any build effort should include a tool to scan dependencies for known vulnerabilities.
 
+#### npm audit
+
+Probably the first place to start is with `npm` (the node package manager) itself.
+
+For an introduction to `npm audit`:
+
+    http://docs.npmjs.com/getting-started/running-a-security-audit
+
+To see what vulnerabilities it can detect:
+
+```bash
+$ npm audit
+```
+
+To see what fixes can be automatically made:
+
+```bash
+$ npm audit fix --dry-run
+```
+
+For a more comprehensive list of `npm aduit` options:
+
+    http://docs.npmjs.com/cli/audit
+
+[It is not clear whether or not this information relies on OWASP, probably best to use both.]
+
+#### OWASP
+
 The [Open Web Application Security Project (OWASP)](http://www.owasp.org/index.php/Main_Page)
 sponsors a number of security projects, among them a dependency checker:
 
@@ -339,7 +369,7 @@ of attractive integrations, such as GitHub and Travis/Jenkins.
 
 Snyk publishes a list of the vulnerabilities that it can scan for:
 
-    https://snyk.io/vuln
+    http://snyk.io/vuln
 
 Snyk uses dependency manifests in order to determine the dependencies to scan:
 
