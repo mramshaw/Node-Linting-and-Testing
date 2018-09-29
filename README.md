@@ -13,7 +13,7 @@ the first place to start.
 The notes will cover using the javascript package manager `npm`
 but all of this can probably be done just as easily with `yarn`.
 
-Contents
+## Contents
 
 * [Type Checking](#type-checking)
 * [Linting](#linting)
@@ -314,6 +314,8 @@ For an introduction to `npm audit`:
 
     http://docs.npmjs.com/getting-started/running-a-security-audit
 
+> `npm audit` requires packages to have `package.json` and `package-lock.json` files.
+
 To see what vulnerabilities it can detect:
 
 ```bash
@@ -326,7 +328,7 @@ To see what fixes can be automatically made:
 $ npm audit fix --dry-run
 ```
 
-For a more comprehensive list of `npm aduit` options:
+For a more comprehensive list of `npm audit` options:
 
     http://docs.npmjs.com/cli/audit
 
