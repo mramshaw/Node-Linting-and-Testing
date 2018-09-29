@@ -328,6 +328,12 @@ To see what fixes can be automatically made:
 $ npm audit fix --dry-run
 ```
 
+To apply the fixes:
+
+```bash
+$ npm audit fix
+```
+
 For a more comprehensive list of `npm audit` options:
 
     http://docs.npmjs.com/cli/audit
