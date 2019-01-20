@@ -30,8 +30,8 @@ but all of this can probably be done just as easily with `yarn`.
     * [npm audit](#npm-audit)
     * [OWASP](#owasp)
 * [Vulnerability Scanning](#vulnerability-scanning)
-    * [Retire.js](#retire.js)
-    * [Snyk.io](#snyk.io)
+    * [Retire.js](#retirejs)
+    * [Snyk.io](#snykio)
 * [Continuous Integration](#continuous-integration)
 * [To Do](#to-do)
 
