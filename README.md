@@ -30,6 +30,8 @@ but all of this can probably be done just as easily with `yarn`.
     * [npm audit](#npm-audit)
     * [OWASP](#owasp)
 * [Vulnerability Scanning](#vulnerability-scanning)
+    * [Retire.js](#retire.js)
+    * [Snyk.io](#snyk.io)
 * [Continuous Integration](#continuous-integration)
 * [To Do](#to-do)
 
@@ -368,14 +370,20 @@ OWASP is probably as good a place as any to start.
 Any build effort should include tools to scan for vulnerabilities.
 
 * [Burp](http://portswigger.net/burp)
-* [Require.js](http://github.com/RetireJS/retire.js/) [can be integrated as a Burp plugin]
+* [Retire.js](http://github.com/RetireJS/retire.js/) [can be integrated as a Burp plugin]
 * [Snyk](http://snyk.io)
 
-[Require.js](http://retirejs.github.io/retire.js/) publishes a list of the vulnerabilities
+#### Retire.js
+
+[Retire.js](http://retirejs.github.io/retire.js/) publishes a list of the vulnerabilities
 that it can scan for, which is definitely worth a look.
 
+#### Snyk.io
+
 Snyk offers reports, notifications and an attractive dashboard. It also offers a number
-of attractive integrations, such as GitHub and Travis/Jenkins.
+of helpful integrations, such as GitHub and Travis/Jenkins. While Snyk will scan code
+whenever code is checked-in, it will also scan code on a regular bassis as well. For a
+higher frequency of vulnerability scanning, a commercial license is recommended.
 
 Snyk publishes a list of the vulnerabilities that it can scan for:
 
@@ -428,5 +436,6 @@ GitHub such that a code commit triggers an automated build as well as CI testing
 ## To Do
 
 - [x] Investigate [Cucumber](http://cucumber.io/) [BDD framework for Ruby] and __Gherkin__ (English-like DSL for expressing acceptance criteria)
+- [x] Add a note on when Snyk.io conducts vulnerability scans (on code check-in, as well as scheduled scans)
 - [ ] Investigate [Serenity](http://thucydides.info/#/) [BDD framework for validating use cases]
 - [ ] Investigate [SpecFlow](http://specflow.org/) [BDD framework that describes itself as "Cucumber for .NET"]
