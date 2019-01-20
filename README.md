@@ -382,7 +382,7 @@ that it can scan for, which is definitely worth a look.
 
 Snyk offers reports, notifications and an attractive dashboard. It also offers a number
 of helpful integrations, such as GitHub and Travis/Jenkins. While Snyk will scan code
-whenever code is checked-in, it will also scan code on a regular bassis as well. For a
+whenever code is checked-in, it will also scan code on a regular basis as well. For a
 higher frequency of vulnerability scanning, a commercial license is recommended.
 
 Snyk publishes a list of the vulnerabilities that it can scan for:
