@@ -94,6 +94,12 @@ Update `package.json` as follows:
   },
 ```
 
+To set `eslint` options (if not set globally):
+
+```bash
+npm run -s eslint -- --init
+```
+
 To run:
 
 ```bash
