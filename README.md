@@ -179,6 +179,13 @@ for business (business-related user acceptance criteria) testing.]
 There are a number of BDD frameworks for languages such as Ruby (Cucumber, minitest)
 and Java (JGiven) but the focus here is on frameworks for javascript.
 
+UPDATE: It seems that Cucumber has been ported to Javascript -
+[Cucumber.js](http://www.npmjs.com/package/cucumber). There is
+at least one use of it in the wild -
+[Botium BDD Samples](https://github.com/codeforequity-at/botium-bdd-samples)
+(Botium is a testing framework for chatbots - it describes itself as
+"The Selenium for Chatbots").
+
 * Assert
 * [code](http://github.com/hapijs/code) is a BDD assertion library
 * [Chai](http://chaijs.com) is a BDD / TDD assertion library
@@ -442,6 +449,7 @@ GitHub such that a code commit triggers an automated build as well as CI testing
 ## To Do
 
 - [x] Investigate [Cucumber](http://cucumber.io/) [BDD framework for Ruby] and __Gherkin__ (English-like DSL for expressing acceptance criteria)
+- [ ] Investigate [Cucumber.js](http://github.com/cucumber/cucumber-js) [BDD framework for Javascript]
 - [x] Add a note on when Snyk.io conducts vulnerability scans (on code check-in, as well as scheduled scans)
 - [ ] Investigate [Serenity](http://thucydides.info/#/) [BDD framework for validating use cases]
 - [ ] Investigate [SpecFlow](http://specflow.org/) [BDD framework that describes itself as "Cucumber for .NET"]
