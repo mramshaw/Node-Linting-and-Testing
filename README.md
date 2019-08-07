@@ -57,6 +57,14 @@ Update `package.json` as follows:
   },
 ```
 
+To initialize:
+
+```bash
+npm run -s flow init
+```
+
+[This will create a `.flowconfig` file, which should be committed.]
+
 To run:
 
 ```bash
@@ -68,6 +76,12 @@ Note that individual files must be annotated as follows in order to be scanned b
 ```javascript
 // @flow
 
+```
+
+Status:
+
+```bash
+npm run -s flow status
 ```
 
 Details:
