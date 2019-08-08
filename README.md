@@ -19,6 +19,7 @@ but all of this can probably be done just as easily with `yarn`.
 
 * [Type Checking](#type-checking)
 * [Linting](#linting)
+    * [Disabling eslint rules](#disabling-eslint-rules)
 * [Testing](#testing)
     * [Testing Frameworks](#testing-frameworks)
     * [Assertion Libraries](#assertion-libraries)
@@ -129,6 +130,19 @@ npm run -s eslint -- --fix .
 Details:
 
     http://eslint.org/docs/user-guide/command-line-interface
+
+#### Disabling eslint rules
+
+It is straightforward to disable eslint rules for specific lines of code:
+
+```node.js
+// eslint-disable-next-line no-unused-vars
+const routes = require("./routes.js")(app);
+```
+
+Reference:
+
+    http://eslint.org/docs/user-guide/configuring#disabling-rules-with-inline-comments
 
 ## Testing
 
@@ -465,5 +479,6 @@ GitHub such that a code commit triggers an automated build as well as CI testing
 - [x] Investigate [Cucumber](http://cucumber.io/) [BDD framework for Ruby] and __Gherkin__ (English-like DSL for expressing acceptance criteria)
 - [ ] Investigate [Cucumber.js](http://github.com/cucumber/cucumber-js) [BDD framework for Javascript]
 - [x] Add a note on when Snyk.io conducts vulnerability scans (on code check-in, as well as scheduled scans)
+- [x] Add a note on disabling `eslint` rules
 - [ ] Investigate [Serenity](http://thucydides.info/#/) [BDD framework for validating use cases]
 - [ ] Investigate [SpecFlow](http://specflow.org/) [BDD framework that describes itself as "Cucumber for .NET"]
