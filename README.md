@@ -461,6 +461,7 @@ This is really a ___best practice___ and should include linting and code coverag
 as discussed above.
 
 * [BuildBot](http://buildbot.net)
+* [GitHub Actions](http://help.github.com/en/actions/automating-your-workflow-with-github-actions/using-nodejs-with-github-actions)
 * [Jenkins](http://jenkins.io)
 * [Strider CD](http://strider-cd.github.io)
 
@@ -474,11 +475,18 @@ GitHub integration is usually relatively easy and painless, and often has a free
 In my experience, Travis CI has been easy to use and features an easy integration with
 GitHub such that a code commit triggers an automated build as well as CI testing.
 
+Not surprisingly, GitHub Actions integrate pretty well with GutHub too. They are not
+yet the most easy to use (being still pretty much the new kid on the block) but will
+probably get there eventually.
+
+[For an example, check out my [ReactAWS](https://github.com/mramshaw/ReactAWS) repo.]
+
 ## To Do
 
 - [x] Investigate [Cucumber](http://cucumber.io/) [BDD framework for Ruby] and __Gherkin__ (English-like DSL for expressing acceptance criteria)
 - [ ] Investigate [Cucumber.js](http://github.com/cucumber/cucumber-js) [BDD framework for Javascript]
 - [x] Add a note on when Snyk.io conducts vulnerability scans (on code check-in, as well as scheduled scans)
 - [x] Add a note on disabling `eslint` rules
+- [x] Add a note about GitHub Actions
 - [ ] Investigate [Serenity](http://thucydides.info/#/) [BDD framework for validating use cases]
 - [ ] Investigate [SpecFlow](http://specflow.org/) [BDD framework that describes itself as "Cucumber for .NET"]
