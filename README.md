@@ -465,17 +465,24 @@ as discussed above.
 * [Jenkins](http://jenkins.io)
 * [Strider CD](http://strider-cd.github.io)
 
-For many uses, CIAAS (Continuous Integration As A Service) may be an attractive option.
+For many uses, CIaaS (Continuous Integration as a Service) may be an attractive option.
 GitHub integration is usually relatively easy and painless, and often has a free tier.
 
 * [CircleCI](http://circleci.com)
-* [Gitlab](http://gitlab.com)
+* [GitLab](http://gitlab.com)
 * [Travis CI](http://travis-ci.org)
+
+CircleCI is relatively easy to use, and integrates well with GitHub.
+
+[For an example, check out my [Circling](https://github.com/mramshaw/Circling) repo.]
+
+GitLab features their own CI/CD pipelines and tools. Other options are possible,
+but as they offer a pretty full slate of services, why use anything else?
 
 In my experience, Travis CI has been easy to use and features an easy integration with
 GitHub such that a code commit triggers an automated build as well as CI testing.
 
-Not surprisingly, GitHub Actions integrate pretty well with GutHub too. They are not
+Not surprisingly, GitHub Actions integrate pretty well with GitHub too. They are not
 yet the most easy to use (being still pretty much the new kid on the block) but will
 probably get there eventually.
 
