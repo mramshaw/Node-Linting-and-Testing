@@ -5,14 +5,14 @@
 Some notes on Linting and Testing with node.js as well as some
 general thoughts on BDD & TDD frameworks.
 
-[Most of these tools may also be used when developing with
- plain javascript as well as javascript frameworks such as React.]
+[Most of these tools may be used when developing with plain javascript
+ as well as with javascript frameworks such as React.]
 
 All of the main browsers have extensions that can verify javascript.
 When testing client-side javascript components, these are probably
 the first place to start.
 
-The notes will cover using the javascript package manager `npm`
+The notes will cover using the package manager `npm`
 but all of this can probably be done just as easily with `yarn`.
 
 ## Contents
@@ -270,8 +270,8 @@ npm install sinon -D
 * [Chai HTTP](http://chaijs.com/plugins/chai-http)
 * [Cypress](http://www.cypress.io)
 
-We will install __Chai HTTP__ but __Cypress__ is also worth considering
-(especially for Front-end Developers, as it can make them more __Agile__).
+We will install Chai HTTP but __Cypress__ is also worth considering
+(especially for Front-end Developers, as it can make them more Agile).
 
 Cypress is a relative newcomer but shows promise. It plays well with __Mocha__ and __Chai__.
 
@@ -297,7 +297,7 @@ Unlike other tools, Cypress does not use a __Selenium WebDriver__. This should m
 that Cypress testing is faster (no WebDriver ramp-up time needed), also no network
 lag.
 
-Cypress records video of the tests (this needs to be slowed-down quite a lot).
+Cypress records video of the tests (this video needs to be slowed-down quite a lot).
 
 Cypress can interact with Electron applications (such as __Postman__ and Cypress
 Test Runner).
