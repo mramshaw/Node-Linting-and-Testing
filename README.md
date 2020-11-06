@@ -451,7 +451,7 @@ Any build effort should include tools to scan for vulnerabilities.
 * [Burp](http://portswigger.net/burp)
 * [GitHub](#github)
 * [Retire.js](#retirejs)
-* [Snyk](http://snyk.io)
+* [Snyk.io](#snykio)
 
 #### GitHub
 
@@ -463,7 +463,7 @@ to be very much up-to-date. For most use cases, this is probably sufficient.
 [Retire.js](http://retirejs.github.io/retire.js/) publishes a list of the vulnerabilities
 that it can scan for, which is definitely worth a look.
 
-[Retire.js can be integrated as a Burp plugin.]
+Retire.js can be integrated as a [Burp](http://portswigger.net/burp) plugin.
 
 #### Snyk.io
 
