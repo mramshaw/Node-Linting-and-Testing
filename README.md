@@ -35,6 +35,7 @@ but all of this can probably be done just as easily with `yarn`.
     * [npm audit](#npm-audit)
     * [OWASP](#owasp)
 * [Vulnerability Scanning](#vulnerability-scanning)
+    * [GitHub](#github)
     * [Retire.js](#retirejs)
     * [Snyk.io](#snykio)
 * [Continuous Integration](#continuous-integration)
@@ -448,13 +449,21 @@ OWASP is probably as good a place as any to start.
 Any build effort should include tools to scan for vulnerabilities.
 
 * [Burp](http://portswigger.net/burp)
-* [Retire.js](http://github.com/RetireJS/retire.js/) [can be integrated as a Burp plugin]
+* [GitHub](#github)
+* [Retire.js](#retirejs)
 * [Snyk](http://snyk.io)
+
+#### GitHub
+
+[GitHub](http://github.com) will scan your repos for vulnerabilities. They usually seem
+to be very much up-to-date. For most use cases, this is probably sufficient.
 
 #### Retire.js
 
 [Retire.js](http://retirejs.github.io/retire.js/) publishes a list of the vulnerabilities
 that it can scan for, which is definitely worth a look.
+
+[Retire.js can be integrated as a Burp plugin.]
 
 #### Snyk.io
 
@@ -560,6 +569,7 @@ For an example, check out my [RESTful Recipes](http://github.com/mramshaw/RESTfu
 - [x] Add a note on when Snyk.io conducts vulnerability scans (on code check-in, as well as scheduled scans)
 - [x] Add a note on disabling `eslint` rules
 - [x] Add a note about GitHub Actions
+- [x] Add a note about GitHub and their vulnerability scans
 - [x] Add more examples for CIaaS
 - [ ] Investigate [Serenity](http://thucydides.info/#/) [BDD framework for validating use cases]
 - [ ] Investigate [SpecFlow](http://specflow.org/) [BDD framework that describes itself as "Cucumber for .NET"]
