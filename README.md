@@ -6,7 +6,7 @@ Some notes on Linting and Testing with node.js as well as some
 general thoughts on BDD & TDD frameworks.
 
 [Most of these tools may be used when developing with plain javascript
- as well as with javascript frameworks such as React.]
+ as well as with javascript frameworks such as React or Vue.]
 
 All of the main browsers have extensions that can verify javascript.
 When testing client-side javascript components, these are probably
@@ -26,9 +26,9 @@ but all of this can probably be done just as easily with `yarn`.
     * [Dependency Manipulation Libraries](#dependency-manipulation-libraries)
     * [Functional Testing Tools](#functional-testing-tools)
         * [CircleCI](#circleci)
+        * [GitHub Actions](#github-actions)
         * [GitLab](#gitlab)
         * [Travis CI](#travis-ci)
-        * [GitHub Actions](#github-actions)
     * [HTML Parsing](#html-parsing)
 * [Code Coverage Libraries](#code-coverage-libraries)
 * [Dependency Checking](#dependency-checking)
@@ -524,7 +524,7 @@ For an example, check out my [Circling](http://github.com/mramshaw/Circling) rep
 
 Not surprisingly,
 [GitHub Actions](http://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions)
-integrate pretty well with GitHub. They are not yet the most easy to use (being still
+integrate well with GitHub. They are not yet the most easy to use (being still
 pretty much the new kid on the block) but will probably become easier to use
 eventually.
 
@@ -534,20 +534,21 @@ For an example with __vue.js__, check out my [VueRender](http://github.com/mrams
 
 #### GitLab
 
-[GitLab](http://gitlab.com) features their own CI/CD pipelines and tools. Other
-options are possible, but as they offer a pretty full slate of services, why use
-anything else?
+[GitLab](http://gitlab.com) features their own CI/CD pipelines and tools, which
+offer a pretty full slate of services.
 
-If you are using GitLab for source control, also using them for CIaaS seems like
+If you are using GitLab for source control, also using GitLab for CIaaS seems like
 the way to go.
 
 For more on GitLab, check out my [GitLab](http://gitlab.com/mramshaw/gitlab) repo.
 
 #### Travis CI
 
-In my experience, [Travis CI](http://travis-ci.org) has been easy to use and integrates
-well with GitHub such that a code commit can trigger an automated build as well as
-CI testing.
+Travis CI is easy to use and integrates well with GitHub such that a code commit
+can trigger an automated build as well as CI testing.
+
+There are [free](http://travis-ci.org) as well as [commercial](http://travis-ci.com)
+options.
 
 For an example, check out my [RESTful Recipes](http://github.com/mramshaw/RESTful-Recipes) repo.
 
