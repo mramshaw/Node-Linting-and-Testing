@@ -25,6 +25,10 @@ but all of this can probably be done just as easily with `yarn`.
     * [Assertion Libraries](#assertion-libraries)
     * [Dependency Manipulation Libraries](#dependency-manipulation-libraries)
     * [Functional Testing Tools](#functional-testing-tools)
+        * [CircleCI](#circleci)
+        * [GitLab](#gitlab)
+        * [Travis CI](#travis-ci)
+        * [GitHub Actions](#github-actions)
     * [HTML Parsing](#html-parsing)
 * [Code Coverage Libraries](#code-coverage-libraries)
 * [Dependency Checking](#dependency-checking)
@@ -210,7 +214,7 @@ and Java (JGiven) but the focus here is on frameworks for javascript.
 UPDATE: It seems that Cucumber has been ported to Javascript -
 [Cucumber.js](http://www.npmjs.com/package/cucumber). There is
 at least one use of it in the wild -
-[Botium BDD Samples](https://github.com/codeforequity-at/botium-bdd-samples)
+[Botium BDD Samples](http://github.com/codeforequity-at/botium-bdd-samples)
 (Botium is a testing framework for chatbots - it describes itself as
 "The Selenium for Chatbots").
 
@@ -494,32 +498,58 @@ This is really a ___best practice___ and should include linting and code coverag
 as discussed above.
 
 * [BuildBot](http://buildbot.net)
-* [GitHub Actions](http://help.github.com/en/actions/automating-your-workflow-with-github-actions/using-nodejs-with-github-actions)
 * [Jenkins](http://jenkins.io)
 * [Strider CD](http://strider-cd.github.io)
 
 For many uses, CIaaS (Continuous Integration as a Service) may be an attractive option.
 GitHub integration is usually relatively easy and painless, and often has a free tier.
 
-* [CircleCI](http://circleci.com)
-* [GitLab](http://gitlab.com)
-* [Travis CI](http://travis-ci.org)
+* [CircleCI](#circleci)
+* [GitHub Actions](#github-actions)
+* [GitLab](#gitlab)
+* [Travis CI](#travis-ci)
 
-CircleCI is relatively easy to use, and integrates well with GitHub.
+My experience has been mainly with GitHub as a source control provider, although I have
+also used GitLab professionally. If you are on GitLab, it's a good idea to stick with
+their CI tools as they are pretty good. For the other options discussed below, I will
+be considering them in terms of how well they integrate with GitHub.
 
-[For an example, check out my [Circling](https://github.com/mramshaw/Circling) repo.]
+#### CircleCI
 
-GitLab features their own CI/CD pipelines and tools. Other options are possible,
-but as they offer a pretty full slate of services, why use anything else?
+[CircleCI](http://circleci.com) is relatively easy to use, and integrates well with GitHub.
 
-In my experience, Travis CI has been easy to use and features an easy integration with
-GitHub such that a code commit triggers an automated build as well as CI testing.
+For an example, check out my [Circling](http://github.com/mramshaw/Circling) repo.
 
-Not surprisingly, GitHub Actions integrate pretty well with GitHub too. They are not
-yet the most easy to use (being still pretty much the new kid on the block) but will
-probably get there eventually.
+#### GitHub Actions
 
-[For an example, check out my [ReactAWS](https://github.com/mramshaw/ReactAWS) repo.]
+Not surprisingly,
+[GitHub Actions](http://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions)
+integrate pretty well with GitHub. They are not yet the most easy to use (being still
+pretty much the new kid on the block) but will probably become easier to use
+eventually.
+
+For an example with __react.js__, check out my [ReactAWS](http://github.com/mramshaw/ReactAWS) repo.
+
+For an example with __vue.js__, check out my [VueRender](http://github.com/mramshaw/VueRender) repo.
+
+#### GitLab
+
+[GitLab](http://gitlab.com) features their own CI/CD pipelines and tools. Other
+options are possible, but as they offer a pretty full slate of services, why use
+anything else?
+
+If you are using GitLab for source control, also using them for CIaaS seems like
+the way to go.
+
+For more on GitLab, check out my [GitLab](http://gitlab.com/mramshaw/gitlab) repo.
+
+#### Travis CI
+
+In my experience, [Travis CI](http://travis-ci.org) has been easy to use and integrates
+well with GitHub such that a code commit can trigger an automated build as well as
+CI testing.
+
+For an example, check out my [RESTful Recipes](http://github.com/mramshaw/RESTful-Recipes) repo.
 
 ## To Do
 
@@ -529,5 +559,6 @@ probably get there eventually.
 - [x] Add a note on when Snyk.io conducts vulnerability scans (on code check-in, as well as scheduled scans)
 - [x] Add a note on disabling `eslint` rules
 - [x] Add a note about GitHub Actions
+- [x] Add more examples for CIaaS
 - [ ] Investigate [Serenity](http://thucydides.info/#/) [BDD framework for validating use cases]
 - [ ] Investigate [SpecFlow](http://specflow.org/) [BDD framework that describes itself as "Cucumber for .NET"]
