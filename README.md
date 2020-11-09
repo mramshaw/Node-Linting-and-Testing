@@ -268,7 +268,7 @@ npm install sinon -D
 
 * [PhantomJS](http://phantomjs.org)
 * [CasperJS](http://casperjs.org)
-* [Selenium WebDriver](http://seleniumhq.org)
+* [Selenium WebDriver](http://www.selenium.dev/projects/#selenium-webdriver)
 * [NightwatchJS](http://nightwatchjs.org)
 * [WebdriverIO](http://webdriver.io)
 * [SuperAgent](http://visionmedia.github.io/superagent)
@@ -280,32 +280,11 @@ We will install Chai HTTP but __Cypress__ is also worth considering
 
 Cypress is a relative newcomer but shows promise. It plays well with __Mocha__ and __Chai__.
 
-As contrasted with __Selenium__, browser support is more limited - as of November, 2020:
-
-1. Chrome
-2. Firefox
-3. Edge
-4. Electron
-5. Brave
-
-[These are probably sufficient for most purposes.]
-
 Cypress is JavaScript-based which makes navigating a DOM straightforward. This may
 well obviate [HTML Parsing](#html-parsing), as described below. So, no __Cheerio__
 needed.
 
-Cypress operates directly in the browser, however the browser may be invoked headlessly.
-See my [hello-world-cypress](http://github.com/mramshaw/hello-world-cypress) repo.
-Being browser-based, it looks like Cypress can bypass some CORS limitations.
-
-Unlike other tools, Cypress does not use a __Selenium WebDriver__. This should mean
-that Cypress testing is faster (no WebDriver ramp-up time needed), also no network
-lag.
-
-Cypress records video of the tests (this video needs to be slowed-down quite a lot).
-
-Cypress can interact with Electron applications (such as __Postman__ and Cypress
-Test Runner).
+For more on Cypress, check out my [Evergreen](http://github.com/mramshaw/Evergreen) repo.
 
 To install Chai HTTP:
 
@@ -324,7 +303,7 @@ and error-prone test.
 For parsing and validating HTML, Cheerio should be useful - bearing in mind that it
 was designed for ___server-side___ HTML Parsing.
 
-* [Cheerio](http://cheerio.js.org/)
+* [Cheerio](http://cheerio.js.org)
 
 To install:
 
@@ -566,6 +545,7 @@ For an example, check out my [RESTful Recipes](http://github.com/mramshaw/RESTfu
 - [x] Investigate [Cucumber](http://cucumber.io/) [BDD framework for Ruby] and __Gherkin__ (English-like DSL for expressing acceptance criteria)
 - [ ] Investigate [Cucumber.js](http://github.com/cucumber/cucumber-js) [BDD framework for Javascript]
 - [x] Add some notes on [Cypress](http://www.cypress.io/)
+- [x] Move Cypress notes to my [Evergreen](http://github.com/mramshaw/Evergreen) repo
 - [x] Add a note on when Snyk.io conducts vulnerability scans (on code check-in, as well as scheduled scans)
 - [x] Add a note on disabling `eslint` rules
 - [x] Add a note about GitHub Actions
