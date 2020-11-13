@@ -31,6 +31,7 @@ but all of this can probably be done just as easily with `yarn`.
         * [Travis CI](#travis-ci)
     * [HTML Parsing](#html-parsing)
 * [Code Coverage Libraries](#code-coverage-libraries)
+* [Secrets Checking](#secrets-checking)
 * [Dependency Checking](#dependency-checking)
     * [npm audit](#npm-audit)
     * [OWASP](#owasp)
@@ -364,6 +365,23 @@ To run:
 npm run -s coverage
 ```
 
+## Secrets Checking
+
+It's quite easy for beginners or those who use IDEs or automated tools to check
+in secrets or certificates. Self-signed localhost certs are not really a concern,
+but certificates in general are something to keep an eye on. Secrets files, if they
+absolutely must be checked in, should be encrypted.
+
+Submitting __pull requests__ for code review can help, also there are repo-scanning
+options available - such as those from [GitGuardian](http://www.gitguardian.com/).
+But a carefully constructed __.gitignore__ file is probably the first line of defence.
+
+For private repos this is less of an issue, but for public repos it is something to
+be guarded against. It can be a real challenge to make secrets or certificates
+available to the CI/CD pipeline providers while keeping them secret from the
+public. Luckily most CI/CD providers have tooling available for this purpose,
+but it does tend to complicate the CI/CD pipeline.
+
 ## Dependency Checking
 
 Any build effort should include a tool to scan dependencies for known vulnerabilities.
@@ -550,6 +568,7 @@ For an example, check out my [RESTful Recipes](http://github.com/mramshaw/RESTfu
 - [x] Add a note on disabling `eslint` rules
 - [x] Add a note about GitHub Actions
 - [x] Add a note about GitHub and their vulnerability scans
+- [x] Add some notes about Secrets Checking
 - [x] Add more examples for CIaaS
 - [ ] Investigate [Serenity](http://thucydides.info/#/) [BDD framework for validating use cases]
 - [ ] Investigate [SpecFlow](http://specflow.org/) [BDD framework that describes itself as "Cucumber for .NET"]
